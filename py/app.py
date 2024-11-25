@@ -27,7 +27,12 @@ class App(QMainWindow):
         
     def colorsView(self):
         #Crear qdialog para seleccionar color
-        color = QColorDialog.getColor()
+        color = QColorDialog().getColor(QColor(self.hexDecimal.text()))
+        
+        # Cambiar el color predeterminado del dialogo al entrar
+        
+        
+
         hex = color.name()
         self.frame.setStyleSheet('background-color: ' + hex)
         
@@ -41,6 +46,7 @@ class App(QMainWindow):
         self.sliderRed.setValue(redValue)
         self.sliderGreen.setValue(greenValue)
         self.sliderBlue.setValue(blueValue)
+        
         
         
         
