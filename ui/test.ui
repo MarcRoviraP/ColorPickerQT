@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>41</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="redValue">
+       <property name="text">
+        <string>255</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="greenValue">
+       <property name="text">
+        <string>255</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="blueValue">
+       <property name="text">
+        <string>255</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="hexDecimal">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>113</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>#ffffff</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="exit">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>230</y>
+      <width>171</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EIXIR</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>281</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QSlider" name="sliderRed">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+           <property name="value">
+            <number>255</number>
+           </property>
+           <property name="sliderPosition">
+            <number>255</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksAbove</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="sliderGreen">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+           <property name="value">
+            <number>255</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksAbove</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="sliderBlue">
+           <property name="maximum">
+            <number>255</number>
+           </property>
+           <property name="value">
+            <number>255</number>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="tickPosition">
+            <enum>QSlider::TicksAbove</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(255, 0, 4);
+font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
+           </property>
+           <property name="text">
+            <string>RED</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::PlainText</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 255, 0);
+font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
+           </property>
+           <property name="text">
+            <string>GREEN</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 255);
+font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
+           </property>
+           <property name="text">
+            <string>BLUE</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="colorPicker">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>230</y>
+      <width>201</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PALETA DE COLORS</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>568</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>sliderRed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>redValue</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>280</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>greenValue</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderBlue</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>blueValue</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>498</x>
+     <y>183</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>colorPicker</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>colorsView()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>236</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>248</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>changeColor(int,int,int)</slot>
+  <slot>colorsView()</slot>
+ </slots>
+</ui>
