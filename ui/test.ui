@@ -6,22 +6,25 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>568</width>
-    <height>329</height>
+    <width>588</width>
+    <height>259</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Color PIcker</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">QLabel{
+font: 15pt &quot;Sans Serif&quot;;
+}
+</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>50</y>
+      <y>10</y>
       <width>100</width>
       <height>100</height>
      </rect>
@@ -43,8 +46,8 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>50</y>
-      <width>41</width>
+      <y>10</y>
+      <width>59</width>
       <height>141</height>
      </rect>
     </property>
@@ -76,10 +79,13 @@
     <property name="geometry">
      <rect>
       <x>50</x>
-      <y>160</y>
-      <width>113</width>
+      <y>120</y>
+      <width>101</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">qproperty-alignment: &quot;AlignCenter&quot;</string>
     </property>
     <property name="text">
      <string>#ffffff</string>
@@ -91,11 +97,19 @@
    <widget class="QPushButton" name="exit">
     <property name="geometry">
      <rect>
-      <x>290</x>
-      <y>230</y>
-      <width>171</width>
-      <height>26</height>
+      <x>410</x>
+      <y>190</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+color: rgb(255, 255, 255);
+border: 4px solid white;
+border-radius: 10px;
+
+font: 15pt &quot;Sans Serif&quot;;</string>
     </property>
     <property name="text">
      <string>EIXIR</string>
@@ -105,7 +119,7 @@
     <property name="geometry">
      <rect>
       <x>190</x>
-      <y>50</y>
+      <y>10</y>
       <width>281</width>
       <height>141</height>
      </rect>
@@ -175,19 +189,16 @@
        <item>
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
-          <widget class="QLabel" name="label">
+          <widget class="QLabel" name="label_4">
            <property name="layoutDirection">
-            <enum>Qt::RightToLeft</enum>
+            <enum>Qt::LeftToRight</enum>
            </property>
            <property name="styleSheet">
-            <string notr="true">color: rgb(255, 0, 4);
-font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
+            <string notr="true">color: rgb(255, 0, 0);
+</string>
            </property>
            <property name="text">
-            <string>RED</string>
-           </property>
-           <property name="textFormat">
-            <enum>Qt::PlainText</enum>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;RED&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -201,10 +212,10 @@ font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
            </property>
            <property name="styleSheet">
             <string notr="true">color: rgb(0, 255, 0);
-font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
+</string>
            </property>
            <property name="text">
-            <string>GREEN</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;GREEN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -215,10 +226,10 @@ font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
           <widget class="QLabel" name="label_3">
            <property name="styleSheet">
             <string notr="true">color: rgb(0, 0, 255);
-font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
+</string>
            </property>
            <property name="text">
-            <string>BLUE</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;BLUE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -235,13 +246,36 @@ font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>230</y>
-      <width>201</width>
-      <height>26</height>
+      <y>190</y>
+      <width>291</width>
+      <height>41</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(170, 170, 127);
+color: rgb(255, 255, 255);
+font: 15pt &quot;Sans Serif&quot;;
+border: 4px solid white;
+border-radius: 10px
+
+
+</string>
     </property>
     <property name="text">
      <string>PALETA DE COLORS</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>521</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
   </widget>
@@ -250,44 +284,27 @@ font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>568</width>
+     <width>588</width>
      <height>23</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>sliderRed</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>redValue</receiver>
-   <slot>setNum(int)</slot>
+   <sender>colorPicker</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>colorsView()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>280</x>
-     <y>99</y>
+     <x>236</x>
+     <y>221</y>
     </hint>
     <hint type="destinationlabel">
-     <x>497</x>
-     <y>86</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>sliderGreen</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>greenValue</receiver>
-   <slot>setNum(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>282</x>
-     <y>143</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>497</x>
-     <y>133</y>
+     <x>248</x>
+     <y>232</y>
     </hint>
    </hints>
   </connection>
@@ -299,27 +316,43 @@ font: 75 14pt &quot;C059 [UKWN]&quot;;</string>
    <hints>
     <hint type="sourcelabel">
      <x>310</x>
-     <y>185</y>
+     <y>145</y>
     </hint>
     <hint type="destinationlabel">
      <x>498</x>
-     <y>183</y>
+     <y>143</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>colorPicker</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>colorsView()</slot>
+   <sender>sliderRed</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>redValue</receiver>
+   <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>236</x>
-     <y>261</y>
+     <x>280</x>
+     <y>59</y>
     </hint>
     <hint type="destinationlabel">
-     <x>248</x>
-     <y>232</y>
+     <x>497</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sliderGreen</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>greenValue</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>497</x>
+     <y>93</y>
     </hint>
    </hints>
   </connection>
